@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>AngularJS - Introduction by The Secret Lab Team</title>
+
+		<meta name="description" content="AngularJS Conference 4th December - Pandnoord - The Secret Lab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	  <!-- Apple Touch Icons -->
+	  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+	  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+	  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+	  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-60x60.png" />
+	  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-120x120.png" />
+	  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-76x76.png" />
+	  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-152x152.png" />
+	  <!-- Windows 8 Tile Icons -->
+	  <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+	  <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+	  <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+	  <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section class="margin-top-70">
+					<h1 >ANGULARJS</h1>
+					<h3>Introduction</h3>
+					<p>
+						<small>by <a href="https://www.linkedin.com/pub/alessandro-rabitti/55/561/b6" target="_blank">Alessandro Rabitti</a> and <a href="https://www.linkedin.com/in/marcosilvacardoso" target="_blank">Marco Cardoso</a></small>
+					</p>
+					<p>
+						<img width="100" height="100" src="images/img_secret-lab-logo.png" alt="Secret Lab Logo">
+					</p>
+				</section>
+
+				<section class="who-are-we">
+					<h1>Bring in the experts</h1>
+					<p>
+						<img width="958" height="320" src="images/img_who-are-we.jpg" alt="Who are we" class="with-border">
+					</p>
+					<p class="fragment roll-in">
+						<span class="with-shadow">Marco Cardoso</span><br>
+						<small><b class="with-yellow-font">Senior Frontend Developer at The Secret Lab</b><br>@anotherwebstorm</small>
+					</p>
+					<p class="fragment roll-in">
+						<span class="with-shadow">Alessandro Rabitti</span><br>
+						<small><b class="with-yellow-font">Senior Web Developer at The Secret Lab</b><br>@silversonicaxel</small>
+					</p>
+				</section>
+
+				<section class="what-is-angularjs">
+					<section>
+						<h2>What is not AngularJS?</h2>
+						<ul class="yellow-list">
+							<li class="fragment roll-in"><span>It is not the typical js framework you work with like Zepto, jQuery, Mootools...</span></li>
+							<li class="fragment roll-in"><span>It actually doesn't need any of these frameworks at all!</span></li>
+							<li class="fragment roll-in"><span>It is not a sort of a Plugin or an extension for our browser.</span></li>
+							<li class="fragment roll-in"><span>It doesn't need an amount of code to execute a simple action.</span></li>
+							<li class="fragment roll-in"><span>It doesn't abstract away HTML, CSS or Javascript.</span></li>
+							<li class="fragment roll-in"><span>It's not complex neither difficult to learn.</span></li>
+						</ul>
+					</section>
+					<section>
+						<q>"A Js Framework<br>for fast performance web applications."</q>
+						<p>
+							<img width="400" height="292" src="images/performance.gif" alt="Performance" class="with-border margin-top-70">
+						</p>
+					</section>
+					<section>
+						<h2>What is AngularJS?</h2>
+						<ul class="yellow-list">
+							<li class="fragment roll-in"><span>A JS framework designed to make your front-end development as easy as possible.</span></li>
+							<li class="fragment roll-in"><span>Expressive, Friendly and Reusable Code.</span></li>
+							<li class="fragment roll-in"><span>Extends your HTML.</span></li>
+							<li class="fragment roll-in"><span>You can REST easily. </span></li>
+							<li class="fragment roll-in"><span>It helps you create easy maintainable single webapps. </span></li>
+							<li class="fragment roll-in"><span>It Was Developed by Google. </span></li>
+							<li class="fragment roll-in"><span>You can start a project within minutes.</span></li>
+						</ul>
+					</section>
+				</section>
+
+				<section class="why we should use it">
+					<section>
+						<h2>Why should we use ANGULARJS?</h2>
+						<p>
+							<img width="400" height="223" src="images/why-should-we-use-it.gif" alt="Why we should use it" class="with-border margin-top-70">
+						</p>
+					</section>
+					<section>
+						<h2 class="margin-top-70">jQuery VS AngularJS</h2>
+						<div class="half-col fragment roll-in">
+							<img src="images/using-jquery.png" alt="Why we should use it" class="with-border">
+						</div>
+						<div class="half-col fragment roll-in">
+							<img src="images/using-angular.png" alt="Why we should use it" class="with-border">
+						</div>
+					</section>
+					<section>
+						<h2 class="margin-top-70">Goes along nicely with other<br>frameworks/libraries</h2>
+						<ul class="yellow-list">
+							<li class="fragment roll-in"><span>Bootstrap</span></li>
+							<li class="fragment roll-in"><span>Phalcon</span></li>
+							<li class="fragment roll-in"><span>mongoDB</span></li>
+							<li class="fragment roll-in"><span>ExpressJS</span></li>
+							<li class="fragment roll-in"><span>NodeJS</span></li>
+							<li class="fragment roll-in"><span>Laravel</span></li>
+							<li class="fragment roll-in"><span>D3.js</span></li>
+							<li class="fragment roll-in"><span>Ionic</span></li>
+							<li class="fragment roll-in"><span>...</span></li>
+						</ul>
+					</section>
+					<section>
+						<p class="margin-top-70">
+							<q>"it is entirely JavaScript and entirely <br>client-side, so anywhere JavaScript can run, AngularJS can run"<br> <small class="margin-top-70">- Misko Hevery and Adam Abrons, Creators of AngularJS -</small></q>
+						</p>
+					</section>
+				</section>
+
+				<section class="data-bindings">
+					<section>
+						<h2>One Way Data Binding</h2>
+						<q>
+							Synchronization between model and view components is revolutionary.
+						</q>
+						<p class="fragment roll-in one-way-shrinked margin-top-30">
+							Normally template systems has a one way data binding, that let the view to be built from template and model interaction, but then the developer needs to provide code to update view after model data update.
+						</p>
+						<p class="fragment roll-in one-way-img">
+							<img src="images/angularjs-onde-way-data-binding.jpg" alt="One Way Data Binding" class="with-border"/>
+						</p>
+					</section>
+					<section>
+						<h2>Two Way Data Binding</h2>
+						<p>
+							In Angular templates, the template is compiled on the browser and the view is created, after that any change to the view are propagated to the model, and viceversa.
+						</p>
+						<p class="two-way-binding-gif">
+							<img src="images/two-way-data-binding.gif" alt="Two Way Data Binding" class="with-border"/>
+						</p>
+						<p class="fragment roll-in two-way-binding-img">
+							<img src="images/angularjs-two-way-data-binding.jpg" alt="Two Way Data Binding" class="with-border"/>
+						</p>
+					</section>
+					<section>
+						<p>
+							<video data-autoplay src="videos/twowaydatabinding.mp4" controls="true"></video>
+						</p>
+						<div class="half-col less-font fragment roll-in">
+							<ul class="yellow-list ">
+								<li>
+									<span>
+									Normal Web Request<br/>
+									First Url request: Response Webpage and Content<br/>
+									Second Url request: Response Webpage and Content
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="half-col less-font fragment roll-in">
+							<ul class="yellow-list ">
+								<li>
+									<span>
+										ANGULARJS Web Request<br/>
+										First Url request: Response Webpage and Content<br/>
+										Second Url request: Response JSON Data (API)
+									</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Directives</h2>
+						<p class="fragment roll-in">Markers binding behaviours to HTML</p>
+						<p class="fragment roll-in">Built-in and custom</p>
+						<p class="fragment roll-in">Expressive HTML elements</p>
+					</section>
+					<section>
+						<h2>Controllers</h2>
+						<p class="fragment roll-in">Logic and Behaviour of HTML</p>
+						<p class="fragment roll-in">Immediate DOM manipulation</p>
+						<p class="fragment roll-in">Markers binding behaviours to HTML</p>
+					</section>
+					<section>
+						<h2>Services</h2>
+						<p class="fragment roll-in">Object for extra functionalities to Controller</p>
+						<p class="fragment roll-in">Built-in and custom</p>
+					</section>
+					<section>
+						<h2>Modules</h2>
+						<p class="fragment roll-in">Manager of the Directives + Controllers + Services</p>
+					</section>
+				</section>
+
+				<section class="our-experience">
+					<section>
+						<h2 class="margin-top-70">
+							Our Experience with AngularJS
+						</h2>
+						<q class="fragment roll-in margin-top-70">
+							80% magic, 20% struggle
+							<img src="images/happy-sad.gif" alt="Happy Sad" class="with-border"/>
+						</q>
+					</section>
+					<section>
+						<ul class="yellow-list margin-top-70">
+							<li><span>Internet Explorer. Our Biggest friend.</span></li>
+							<li class="fragment roll-in"><span>SEO?  Well, Google announced that they're finally crawling javascript but...</span></li>
+							<li class="fragment roll-in"><span>That's it! Disappointed?...</span></li>
+						</ul>
+					</section>
+				</section>
+
+				<section class="the-future-angular-now">
+					<section>
+						<h2 class="margin-top-70">
+							The future of AngularJS is now!
+						</h2>
+						<p>
+							<img src="images/future-is-now.gif" alt="Two Way Data Binding" class="with-border"/>
+						</p>
+					</section>
+					<section>
+						<h2>
+							A small peek on the new AngularJS 2.0
+						</h2>
+						<ul class="yellow-list margin-top-70">
+							<li class="fragment roll-in"><span>Compatible with the upcoming web standards and the new ES6 version of JavaScript.</span></li>
+							<li class="fragment roll-in"><span>Moving directives to Web Components which are now becoming the new semantics for HTML.</span></li>
+							<li class="fragment roll-in"><span>Mobile First.</span></li>
+						</ul>
+					</section>
+				</section>
+
+				<section class="the-end">
+					<section>
+						<h2 class="margin-top-70">
+							Yes, AngularJS is awesome.<br>
+							Thanks for noticing that.
+						</h2>
+						<p>Let's hear more about it.</p>
+						<p>
+							<img src="images/thanks.gif" alt="thanks" class="with-border"/>
+						</p>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="plugin/jquery/jquery-1.11.1.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script src="js/main.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
