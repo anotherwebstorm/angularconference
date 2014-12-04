@@ -68,6 +68,9 @@
 					<p>
 						<img width="100" height="100" src="images/img_secret-lab-logo.png" alt="Secret Lab Logo">
 					</p>
+					<br>
+					<p>wifi:<br>pandnoord / welcomeinpandnoord</p>
+					<p>#tslangular</p>
 				</section>
 
 				<section class="who-are-we">
@@ -183,7 +186,7 @@
 						<p>
 							<video data-autoplay src="videos/twowaydatabinding.mp4" controls="true"></video>
 						</p>
-						<div class="half-col less-font fragment roll-in">
+						<div class="half-col less-font">
 							<ul class="yellow-list ">
 								<li>
 									<span>
@@ -194,7 +197,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="half-col less-font fragment roll-in">
+						<div class="half-col less-font">
 							<ul class="yellow-list ">
 								<li>
 									<span>
@@ -210,25 +213,91 @@
 
 				<section>
 					<section>
-						<h2>Directives</h2>
-						<p class="fragment roll-in">Markers binding behaviours to HTML</p>
-						<p class="fragment roll-in">Built-in and custom</p>
-						<p class="fragment roll-in">Expressive HTML elements</p>
-					</section>
-					<section>
 						<h2>Controllers</h2>
-						<p class="fragment roll-in">Logic and Behaviour of HTML</p>
-						<p class="fragment roll-in">Immediate DOM manipulation</p>
-						<p class="fragment roll-in">Markers binding behaviours to HTML</p>
+						<p>Logic and Behaviour of HTML</p>
+						<p>Setting up the initial state of the HTML objects</p>
+						<div data-markdown class="margin-top-70">
+							<script type="text/template">
+								```
+								myApp.controller("mySettingController", ['$scope', function($scope){
+								  $scope.settingsInit = function() {
+
+									//some initial vars
+									$scope.showSettingsFooter = false;
+									$scope.settingsUpdated = false;
+									$scope.showLogo = true;
+
+									// ... some code ..
+									$scope.saveSettings = function(settings){}
+
+									$scope.loadSettings = function(){}
+								  };
+								}]);
+								```
+							</script>
+						</div>
 					</section>
 					<section>
 						<h2>Services</h2>
-						<p class="fragment roll-in">Object for extra functionalities to Controller</p>
-						<p class="fragment roll-in">Built-in and custom</p>
+						<p>Objects for extra functionalities to Controllers</p>
+						<p>Built-in and custom</p>
+						<div data-markdown class="margin-top-70">
+							<script type="text/template">
+								```
+								myApp.service('myAuthenticationService', [function (){
+								  var myUser = this;
+
+								  myUser.authenticate = function (userToken) {
+								    if(userToken) $.cookie('userToken', userToken, {expires: validDays});
+								    return $.cookie('userToken');
+								  };
+								  myUser.destroy = function(){
+								    $.removeCookie('userToken');
+								  };
+								}]);
+								```
+							</script>
+						</div>
+					</section>
+
+					<section>
+						<h2>Directives</h2>
+						<p>Markers binding behaviours to HTML</p>
+						<p>Built-in and custom</p>
+						<p>Expressive HTML elements</p>
+						<div data-markdown class="margin-top-70">
+							<script type="text/template">
+								```
+								angular.module('myModule', [])
+								.controller('myController', ['$scope', function($scope) {
+								  $scope.example = {
+								    setting: '120',
+								    title: 'My title'
+								  };
+								}])
+								.directive('myExampleDirective', function() {
+								  return {
+								    templateUrl: 'myexampledirective.html'
+								  };
+								});
+								```
+							</script>
+						</div>
 					</section>
 					<section>
 						<h2>Modules</h2>
-						<p class="fragment roll-in">Manager of the Directives + Controllers + Services</p>
+						<p>Main Parts of the application<br>(not single main but multiple mains)</p>
+						<p>Manager Containers of the Directives, Controllers, Services, ..</p>
+						<div data-markdown class="margin-top-70">
+						<script type="text/template">
+								```
+								var myModule = angular.module('myModule', []);
+
+								myModule.service('myService', ...);
+								myModule.directive('myDirective', ...);
+								```
+						</script>
+						</div>
 					</section>
 				</section>
 
